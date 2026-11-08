@@ -1,0 +1,87 @@
+{
+  "profile": {
+    "name": "Maurice Simmons",
+    "title": "DevOps & Cloud Engineering Student",
+    "tagline": "I build, automate, and ship reliable software, from the first commit to production in the cloud.",
+    "valueProposition": "I connect code and infrastructure: containerizing applications, automating deployments with CI/CD, and running them on Google Cloud. I care about systems that are repeatable, observable, and easy for teams to work with.",
+    "location": "United States",
+    "availability": "Open to internships for Summer 2027",
+    "about": [
+      "I'm a student focused on DevOps and cloud engineering. I like taking something that works on my laptop and making it work reliably for everyone else.",
+      "Lately I've been working with Docker, GitHub Actions, and Google Cloud Run, and with AI-assisted development tools like Claude Code to move faster without giving up quality."
+    ]
+  },
+  "projects": [
+    {
+      "title": "Cloud Run Portfolio",
+      "description": "This site. It's a React front end served by an Express API, packaged as a Docker image and deployed to Google Cloud Run automatically on every push to main through GitHub Actions.",
+      "tech": ["React", "Vite", "Node.js", "Express", "Docker", "Cloud Run", "GitHub Actions"],
+      "image": "/projects/portfolio.svg",
+      "repo": "https://github.com/",
+      "demo": "/",
+      "highlight": "AI-assisted build"
+    },
+    {
+      "title": "CI/CD Pipeline Lab",
+      "description": "A GitHub Actions pipeline that lints, tests, and builds a containerized service on every pull request, then publishes a versioned image to Artifact Registry when a merge lands on main.",
+      "tech": ["GitHub Actions", "Docker", "Artifact Registry", "YAML"],
+      "image": "/projects/pipeline.svg",
+      "repo": "https://github.com/",
+      "demo": null,
+      "highlight": "Course project"
+    },
+    {
+      "title": "Linux Server Automation",
+      "description": "Bash scripts that provision a fresh Linux VM: they create users, harden SSH, configure a firewall, and install a monitored web server, so a manual hour of setup takes a few minutes.",
+      "tech": ["Linux", "Bash", "systemd", "UFW", "Nginx"],
+      "image": "/projects/linux.svg",
+      "repo": "https://github.com/",
+      "demo": null,
+      "highlight": "Course project"
+    },
+    {
+      "title": "Uptime Status Dashboard",
+      "description": "A small service that checks a list of endpoints on a schedule, records response times, and shows current status and history on a dashboard, with alerts when a site goes down.",
+      "tech": ["Python", "Flask", "Cloud Scheduler", "Chart.js"],
+      "image": "/projects/status.svg",
+      "repo": null,
+      "demo": null,
+      "highlight": "Concept project"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Cloud & DevOps",
+      "items": [
+        { "name": "Docker", "level": 80 },
+        { "name": "Google Cloud Run", "level": 70 },
+        { "name": "GitHub Actions (CI/CD)", "level": 70 },
+        { "name": "Git & GitHub", "level": 85 }
+      ]
+    },
+    {
+      "category": "Development",
+      "items": [
+        { "name": "JavaScript / Node.js", "level": 65 },
+        { "name": "React", "level": 55 },
+        { "name": "Python", "level": 65 },
+        { "name": "HTML & CSS", "level": 75 }
+      ]
+    },
+    {
+      "category": "Systems",
+      "items": [
+        { "name": "Linux command line", "level": 80 },
+        { "name": "Bash scripting", "level": 70 },
+        { "name": "Networking basics", "level": 60 }
+      ]
+    }
+  ],
+  "learning": ["Kubernetes", "Terraform", "Prometheus & Grafana", "AWS fundamentals"],
+  "tools": ["VS Code", "Claude Code", "Docker Desktop", "gcloud CLI", "Postman", "Linux / WSL"],
+  "contact": {
+    "email": "hello@example.com",
+    "linkedin": "https://www.linkedin.com/",
+    "github": "https://github.com/"
+  }
+}
