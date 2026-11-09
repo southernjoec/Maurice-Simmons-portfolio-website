@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Maurice Simmons",
-    "title": "Cloud Strategy & Operations Manager, DevOps & Cloud Engineering Student at Purdue University",
+    "title": "DevOps & Cloud Engineering Student at Purdue University",
     "tagline": "I design, automate, and deploy reliable software across the full delivery lifecycle, from initial commit to production in the cloud. I’m seeking opportunities to apply my skills in CI/CD, infrastructure automation, and cloud operations to help teams ship faster and with confidence.",
     "valueProposition": "I align technical execution with business strategy by bridging the gap between code and infrastructure. Leveraging Google Cloud, application containerization, and CI/CD automation, I architect highly observable and repeatable systems. My focus is on delivering frictionless, scalable environments that reduce operational risk, accelerate deployment cycles, and empower cross-functional teams to drive measurable value.",
     "location": "United States",
@@ -14,7 +14,7 @@
   "projects": [
     {
       "title": "Cloud Run Portfolio",
-      "description": "This site. It's a React front end served by an Express API, packaged as a Docker image and deployed to Google Cloud Run automatically on every push to main through GitHub Actions.",
+      "description": "This site. It's a React front end served by an Express API, packaged as a Docker image and deployed to Google Cloud Run automatically on every push to main by a Cloud Build trigger, with GitHub Actions running a CI build check.",
       "tech": [
         "React",
         "Vite",
@@ -22,6 +22,7 @@
         "Express",
         "Docker",
         "Cloud Run",
+        "Cloud Build",
         "GitHub Actions"
       ],
       "image": "/projects/portfolio.svg",
