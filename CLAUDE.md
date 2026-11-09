@@ -3,7 +3,7 @@
 ## Project
 A personal portfolio web app for DevOps IA 3. It has a React front end (Vite) in `client/` and an
 Express server in `server/`, and it's packaged as one Docker image and deployed to Google Cloud
-Run by GitHub Actions on every push to `main`.
+Run by a Cloud Build trigger (Cloud Run continuous deployment) on every push to `main`.
 
 ## Architecture rules
 - **It must stay a dynamic app, not a static site.** Content comes from `GET /api/portfolio`, and
@@ -11,7 +11,7 @@ Run by GitHub Actions on every push to `main`.
 - **All portfolio content lives in `server/data/portfolio.json`.** To change text, projects, or skills,
   edit that file only.
 - The server must listen on `process.env.PORT` (Cloud Run sets it; the default is 8080).
-- Keep `GET /healthz` working, because the deploy workflow's smoke test depends on it.
+- Keep `GET /healthz` working, because the CI workflow's smoke test depends on it.
 - The production image is built by the multi-stage `Dockerfile` at the repo root. Don't add a
   separate web server such as nginx.
 
@@ -26,8 +26,8 @@ Run by GitHub Actions on every push to `main`.
 - Keep dependencies minimal. Ask before adding a new npm package.
 
 ## Safety rules
-- Never commit secrets: no service account keys, `.env` files, or API tokens. Credentials go in
-  GitHub Actions secrets only (`GCP_PROJECT_ID`, `GCP_SA_KEY`).
+- Never commit secrets: no service account keys, `.env` files, or API tokens. Deployment needs no
+  keys (Cloud Build is connected to GitHub directly).
 - Validate all user input on the server, not only in the browser.
 
 ## Workflow

@@ -71,7 +71,25 @@ port 8080, and that `/healthz` exists for the smoke test. The README documents t
 
 ---
 
-## Entry 5+: (continue logging your own prompts here)
+## Entry 5: Deployment blocked by organization policy
+**Problem:** `gcloud iam service-accounts keys create` failed with `FAILED_PRECONDITION: Key creation
+is not allowed on this service account` (constraint `iam.disableServiceAccountKeyCreation`).
+
+**Diagnosis:** The class GCP project is in an organization that forbids downloadable service account
+keys, a common security policy because long-lived keys can leak. The GitHub Actions deploy workflow
+depended on a key stored as a GitHub secret, so it could never work in this project.
+
+**Fix:** Switched to Cloud Run continuous deployment: Cloud Build is connected to the GitHub repo and
+builds and deploys the Dockerfile on every push to `main`, with no keys involved. The GitHub Actions
+workflow was changed to a CI build check (client build, API smoke test, Docker build). I updated the
+README, `CLAUDE.md`, and the plan to match.
+
+**Lesson:** Cloud security policies shape deployment design. Keyless approaches (a connected
+Cloud Build trigger or Workload Identity Federation) are preferred over downloaded keys.
+
+---
+
+## Entry 6+: (continue logging your own prompts here)
 <!--
 Template:
 ## Entry N: <short title>

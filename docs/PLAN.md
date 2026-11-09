@@ -69,3 +69,7 @@ Browser ──► Cloud Run (one container, port 8080)
 - `npm ci` failed inside `docker build` in the development sandbox because of network/proxy limits.
   That was an environment issue, not a Dockerfile issue, so the Dockerfile was left as is and
   verified with a proxy-enabled test build.
+- Deploying from GitHub Actions needed a service account key, but the course's GCP organization
+  enforces `iam.disableServiceAccountKeyCreation`. I switched to Cloud Run continuous deployment
+  (a Cloud Build trigger connected to GitHub, which needs no keys), and GitHub Actions now runs a build
+  and smoke-test check only.

@@ -1,0 +1,36 @@
+name: CI
+
+# Deployment is handled by Cloud Run continuous deployment (a Cloud Build
+# trigger connected to this repo), so this workflow only checks that the
+# app builds. No Google Cloud credentials are needed here.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build client
+        working-directory: client
+        run: |
+          npm ci
+          npm run build
+
+      - name: Install server and smoke test
+        working-directory: server
+        run: |
+          npm ci --omit=dev
+          node index.js &
+          sleep 2
+          curl -fsS http://localhost:8080/healthz
+          curl -fsS http://localhost:8080/api/portfolio > /dev/null
+          curl -fsS http://localhost:8080/ > /dev/null
+
+      - name: Build Docker image
+        run: docker build -t portfolio .
