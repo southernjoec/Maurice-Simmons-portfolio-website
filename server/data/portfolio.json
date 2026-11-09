@@ -50,54 +50,11 @@
       "tech": [
         "Data Center Consolidation & Virtualization",
         "Strategic Communications & Secure Networking",
-        "Technical Project Management & Integration",
+        "Technical Project Management & Integration"
       ],
       "image": "/projects/urlshortener.svg",
 
       "highlight": "Deployement & Integration Project"
-    },
-    {
-      "title": "CI/CD Pipeline Lab",
-      "description": "A GitHub Actions pipeline that lints, tests, and builds a containerized service on every pull request, then publishes a versioned image to Artifact Registry when a merge lands on main.",
-      "tech": [
-        "GitHub Actions",
-        "Docker",
-        "Artifact Registry",
-        "YAML"
-      ],
-      "image": "/projects/pipeline.svg",
-      "repo": null,
-      "demo": null,
-      "highlight": "Course project"
-    },
-    {
-      "title": "Linux Server Automation",
-      "description": "Bash scripts that provision a fresh Linux VM: they create users, harden SSH, configure a firewall, and install a monitored web server, so a manual hour of setup takes a few minutes.",
-      "tech": [
-        "Linux",
-        "Bash",
-        "systemd",
-        "UFW",
-        "Nginx"
-      ],
-      "image": "/projects/linux.svg",
-      "repo": null,
-      "demo": null,
-      "highlight": "Course project"
-    },
-    {
-      "title": "Uptime Status Dashboard",
-      "description": "A small service that checks a list of endpoints on a schedule, records response times, and shows current status and history on a dashboard, with alerts when a site goes down.",
-      "tech": [
-        "Python",
-        "Flask",
-        "Cloud Scheduler",
-        "Chart.js"
-      ],
-      "image": "/projects/status.svg",
-      "repo": null,
-      "demo": null,
-      "highlight": "Concept project"
     }
   ],
   "skills": [
