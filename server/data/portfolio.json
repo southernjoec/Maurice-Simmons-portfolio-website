@@ -1,14 +1,14 @@
 {
   "profile": {
     "name": "Maurice Simmons",
-    "title": "Cloud Strategy & Operations Manager, DevOps & Cloud Engineering Student at Purdue Univerisity",
-    "tagline": "I design, automate, and deploy reliable software across the full delivery lifecycle, from initial commit to production in the cloud. I’m seeking opportunities to apply my skills in CI/CD, infrastructure automation, and cloud operations to help teams ship faster and with confidence",
+    "title": "Cloud Strategy & Operations Manager, DevOps & Cloud Engineering Student at Purdue University",
+    "tagline": "I design, automate, and deploy reliable software across the full delivery lifecycle, from initial commit to production in the cloud. I’m seeking opportunities to apply my skills in CI/CD, infrastructure automation, and cloud operations to help teams ship faster and with confidence.",
     "valueProposition": "I align technical execution with business strategy by bridging the gap between code and infrastructure. Leveraging Google Cloud, application containerization, and CI/CD automation, I architect highly observable and repeatable systems. My focus is on delivering frictionless, scalable environments that reduce operational risk, accelerate deployment cycles, and empower cross-functional teams to drive measurable value.",
     "location": "United States",
-    "availability": "Open to internships Spring 2027, Summer 2027, and CO-OP opportunities throuhg out the 2027 calendar year.",
+    "availability": "Open to internships Spring 2027, Summer 2027, and CO-OP opportunities throughout the 2027 calendar year.",
     "about": [
-      "I'm a miltiary veteran and student focused on DevOps, cloud engineering, and AI integration . I like taking something that works on my laptop and making it work reliably for everyone else.",
-      "Lately I've been working with Docker, GitHub Actions, and Google Cloud Run, and with AI-assisted development tools like Claude Code, Google Gemnini, and Grok to move faster without giving up quality."
+      "I'm a military veteran and student focused on DevOps, cloud engineering, and AI integration. I like taking something that works on my laptop and making it work reliably for everyone else.",
+      "Lately I've been working with Docker, GitHub Actions, and Google Cloud Run, and with AI-assisted development tools like Claude Code, Google Gemini, and Grok to move faster without giving up quality."
     ]
   },
   "projects": [
@@ -31,18 +31,18 @@
     },
     {
       "title": "AI Cyber Security Integration",
-      "description": "Integrated machine learning, deep learning, and natural language processing—into an organization's security infrastructure to automate, accelerate, and enhance the detection and mitigation of cyber threats",
+      "description": "Integrated machine learning, deep learning, and natural language processing—into an organization's security infrastructure to automate, accelerate, and enhance the detection and mitigation of cyber threats.",
       "tech": [
-        "Tenebale",
+        "Tenable",
         "Next-Generation SIEM",
         "SentinelOne",
         "Vectra AI",
         "Splunk Enterprise Security",
         "Okta Identity Cloud"
       ],
-      "image": "/projects/urlshortener.svg",
+      "image": "/projects/security.svg",
       "repo": null,
-      "highlight": "Custume Build Cyber Project"
+      "highlight": "Custom-Built Cyber Project"
     },
     {
       "title": "Systems Integrator",
@@ -52,9 +52,9 @@
         "Strategic Communications & Secure Networking",
         "Technical Project Management & Integration"
       ],
-      "image": "/projects/urlshortener.svg",
-
-      "highlight": "Deployement & Integration Project"
+      "image": "/projects/integration.svg",
+      "highlight": "Deployment & Integration Project",
+      "repo": null
     }
   ],
   "skills": [
@@ -116,7 +116,7 @@
           "level": 90
         },
         {
-          "name": "MS Azure ",
+          "name": "Microsoft Azure",
           "level": 80
         },
         {
@@ -127,7 +127,6 @@
           "name": "Server hardening & security",
           "level": 95
         }
-        
       ]
     }
   ],

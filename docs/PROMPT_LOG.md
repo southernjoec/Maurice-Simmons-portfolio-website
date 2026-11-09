@@ -89,7 +89,27 @@ Cloud Build trigger or Workload Identity Federation) are preferred over download
 
 ---
 
-## Entry 6+: (continue logging your own prompts here)
+## Entry 6: Live site broke after a content edit (500 error)
+**Problem:** After I edited `server/data/portfolio.json` with my real information and pushed, the live
+site showed "Sorry, the portfolio content couldn't be loaded. Request failed (500)".
+
+**Diagnosis:** The AI validated the JSON and found a trailing comma after the last item in a `tech`
+list (line 53). JSON doesn't allow trailing commas, so the server's `JSON.parse` failed on every
+request. The AI also found that both new projects pointed to an image that didn't exist
+(`/projects/urlshortener.svg`) and that there were several spelling errors.
+
+**Fix:** Removed the trailing comma, generated two new project images (`security.svg`,
+`integration.svg`), fixed the spelling errors, and stopped the badge dot from squashing on mobile when
+the longer availability text wraps. I re-tested at 3 viewports: no broken images, console errors, or
+horizontal scroll.
+
+**Lesson:** One character can take down production. The CI workflow's `/api/portfolio` smoke test
+catches this kind of error, so check the GitHub Actions result (and validate JSON) before relying on a
+deploy.
+
+---
+
+## Entry 7+: (continue logging your own prompts here)
 <!--
 Template:
 ## Entry N: <short title>
