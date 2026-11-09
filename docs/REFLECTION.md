@@ -1,4 +1,8 @@
+https://hello-api-bl4rum6anq-uc.a.run.app
+
 # Reflection on Using Claude Code AI Assistance
+
+**AI platform and model:** Claude Code (cloud session at claude.ai/code), model Claude Opus 5.5 (`claude-opus-5-5`)
 
 ## About AI as a tool
 
