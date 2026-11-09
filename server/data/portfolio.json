@@ -1,14 +1,14 @@
 {
   "profile": {
     "name": "Maurice Simmons",
-    "title": "DevOps & Cloud Engineering Student",
-    "tagline": "I build, automate, and ship reliable software, from the first commit to production in the cloud.",
-    "valueProposition": "I connect code and infrastructure: containerizing applications, automating deployments with CI/CD, and running them on Google Cloud. I care about systems that are repeatable, observable, and easy for teams to work with.",
+    "title": "Cloud Strategy & Operations Manager, DevOps & Cloud Engineering Student at Purdue Univerisity",
+    "tagline": "I design, automate, and deploy reliable software across the full delivery lifecycle, from initial commit to production in the cloud. I’m seeking opportunities to apply my skills in CI/CD, infrastructure automation, and cloud operations to help teams ship faster and with confidence",
+    "valueProposition": "I align technical execution with business strategy by bridging the gap between code and infrastructure. Leveraging Google Cloud, application containerization, and CI/CD automation, I architect highly observable and repeatable systems. My focus is on delivering frictionless, scalable environments that reduce operational risk, accelerate deployment cycles, and empower cross-functional teams to drive measurable value.",
     "location": "United States",
-    "availability": "Open to internships for Summer 2027",
+    "availability": "Open to internships Spring 2027, Summer 2027, and CO-OP opportunities throuhg out the 2027 calendar year.",
     "about": [
-      "I'm a student focused on DevOps and cloud engineering. I like taking something that works on my laptop and making it work reliably for everyone else.",
-      "Lately I've been working with Docker, GitHub Actions, and Google Cloud Run, and with AI-assisted development tools like Claude Code to move faster without giving up quality."
+      "I'm a miltiary veteran and student focused on DevOps, cloud engineering, and AI integration . I like taking something that works on my laptop and making it work reliably for everyone else.",
+      "Lately I've been working with Docker, GitHub Actions, and Google Cloud Run, and with AI-assisted development tools like Claude Code, Google Gemnini, and Grok to move faster without giving up quality."
     ]
   },
   "projects": [
@@ -28,6 +28,33 @@
       "repo": "https://github.com/southernjoec/Maurice-Simmons-portfolio-website",
       "demo": "/",
       "highlight": "AI-assisted build"
+    },
+    {
+      "title": "AI Cyber Security Integration",
+      "description": "Integrated machine learning, deep learning, and natural language processing—into an organization's security infrastructure to automate, accelerate, and enhance the detection and mitigation of cyber threats",
+      "tech": [
+        "Tenebale",
+        "Next-Generation SIEM",
+        "SentinelOne",
+        "Vectra AI",
+        "Splunk Enterprise Security",
+        "Okta Identity Cloud"
+      ],
+      "image": "/projects/urlshortener.svg",
+      "repo": null,
+      "highlight": "Custume Build Cyber Project"
+    },
+    {
+      "title": "Systems Integrator",
+      "description": "Directed critical IT infrastructure and communications integration across remote operational combat sites in Iraq. Serving as the primary enterprise liaison between two military division commands.",
+      "tech": [
+        "Data Center Consolidation & Virtualization",
+        "Strategic Communications & Secure Networking",
+        "Technical Project Management & Integration",
+      ],
+      "image": "/projects/urlshortener.svg",
+
+      "highlight": "Deployement & Integration Project"
     },
     {
       "title": "CI/CD Pipeline Lab",
@@ -100,15 +127,15 @@
       "items": [
         {
           "name": "JavaScript / Node.js",
-          "level": 65
+          "level": 70
         },
         {
           "name": "React",
-          "level": 55
+          "level": 65
         },
         {
           "name": "Python",
-          "level": 65
+          "level": 80
         },
         {
           "name": "HTML & CSS",
@@ -125,12 +152,25 @@
         },
         {
           "name": "Bash scripting",
+          "level": 80
+        },
+        {
+          "name": "Networking",
+          "level": 90
+        },
+        {
+          "name": "MS Azure ",
+          "level": 80
+        },
+        {
+          "name": "AWS",
           "level": 70
         },
         {
-          "name": "Networking basics",
-          "level": 60
+          "name": "Server hardening & security",
+          "level": 95
         }
+        
       ]
     }
   ],
@@ -138,7 +178,11 @@
     "Kubernetes",
     "Terraform",
     "Prometheus & Grafana",
-    "AWS fundamentals"
+    "AWS architecting",
+    "Google Cloud fundamentals",
+    "Claude Code AI-assisted development",
+    "Grok AI-assisted development",
+    "Google Gemini AI-assisted development"
   ],
   "tools": [
     "VS Code",
@@ -149,8 +193,8 @@
     "Linux / WSL"
   ],
   "contact": {
-    "email": "hello@example.com",
-    "linkedin": "https://www.linkedin.com/",
+    "email": "msjbusiness2027@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/maurice-simmons-12122831/",
     "github": "https://github.com/southernjoec"
   }
 }
